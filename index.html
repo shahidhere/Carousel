@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Assignmet 1- Carousel</title>
+  </head>
+  <body>
+    <div id="h1">
+      <h1>Nature is so Relaxing</h1>
+    </div>
+
+    <section id="carousel" class="carousel">
+      <div class="imageWithText fade">
+        <div class="imageText">Image 1</div>
+        <img id="pic1" class="images" src="pic1.jpg" alt="Nature Pic" />
+      </div>
+      <div class="imageWithText fade">
+        <div class="imageText">Image 2</div>
+        <img id="pic2" class="images" src="pic2.jpg" alt="Nature Pic" />
+      </div>
+      <div class="imageWithText fade">
+        <div class="imageText">Image 3</div>
+        <img id="pic3" class="images" src="pic3.jpg" alt="Nature Pic" />
+      </div>
+      <div class="imageWithText fade">
+        <div class="imageText">Image 4</div>
+        <img id="pic4" class="images" src="pic4.jpg" alt="Nature Pic" />
+      </div>
+
+      <button onclick="slideShow(-1)" id="prevBtn" class="btn">&#x3c;</button>
+      <button onclick="slideShow(1)" id="nextBtn" class="btn">&#x3e;</button>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

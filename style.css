@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgb(211, 252, 252);
+    overflow-y: hidden;
+}
+
+#h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10vh;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.imageWithText{
+    display: none;
+}
+
+.imageText{
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    color: white;
+    background-color: rgba(255, 254, 254, 0);
+    font-size: 3rem;
+}
+
+#carousel img{
+    width: 100vw;
+    height: 90vh;
+    transition: 0.3s opacity ease-in-out;
+}
+
+button{
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    border: 1px solid rgb(158, 156, 156);
+    border-radius: 10%;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    bottom: 50%;
+    background-color: rgba(200, 200, 200, 0.4);
+    font-size: 1.5rem;
+}
+
+button:hover{
+    background-color: #fefefe;
+    border:none;
+}
+
+#nextBtn{
+    right: 0;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+  }
+
+@keyframes example {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
